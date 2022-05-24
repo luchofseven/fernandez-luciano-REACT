@@ -1,13 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { NavBar } from './components/NavBar.jsx'
+
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <h1>FLOORA</h1>
-      <p>Venta de productos Make-Up</p>
-    </div>
-  );
+    
+
+
+    <NavBar />
+
+
+    
+  )
 }
 
 export default App;
