@@ -1,19 +1,17 @@
-import React from "react";
+import CartWidget from './CartWidget.jsx'
+
+
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-light navbar-expand-lg bg-alpha-color-one">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img
-            src="/img/favicon.png"
-            alt="floora logo"
-            height="50px"
-            width="50px"
+        <a className="navbar-brand" href="/">
+          <img src="/images/favicon.png" className="mi-estilo-logo" alt="floora logo" height="50px" width="50px"
           />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -21,24 +19,27 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mi-estilo-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">INICIO</a>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mi-estilo-nav">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="/"><CartWidget items={4} /></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRODUCTOS</a>
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="/">INICIO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PROMOCIONES</a>
+            <li className="nav-item">
+              <a className="nav-link" href="/">PRODUCTOS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">NOSOTROS</a>
+            <li className="nav-item">
+              <a className="nav-link" href="/">PROMOCIONES</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">CONTACTO</a>
+            <li className="nav-item">
+              <a className="nav-link" href="/">NOSOTROS</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">CONTACTO</a>
             </li>
           </ul>
         </div>

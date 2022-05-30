@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -34,4 +36,17 @@
 .mi-estilo-nav li a {
   font-weight: 500;
   font-size: 1rem;
+  transition: 200ms ease-out;
+}
+
+.mi-estilo-nav li a:hover {
+  transform: scale(1.15);
+}
+
+.mi-estilo-logo {
+  transition: 200ms ease-out;
+}
+
+.mi-estilo-logo:hover {
+  transform: scale(1.15);
 }
