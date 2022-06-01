@@ -61,3 +61,15 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
 .mi-estilo-logo:hover {
   transform: scale(1.15);
 }
+
+.mi-estilo-itemcount {
+  background-color: $alpha-color-one;
+  min-height: 100px;
+  max-width: 250px;
+  padding: 5px;
+  border-radius: 1rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}

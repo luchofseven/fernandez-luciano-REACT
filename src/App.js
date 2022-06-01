@@ -1,13 +1,21 @@
 import  NavBar  from './components/NavBar.jsx'
-import ILC from './containers/ItemListContainer.jsx'
+import ItemListContainer from './containers/ItemListContainer.jsx'
+import ItemCount from './components/ItemCount.jsx'
 
 function App() {
+
+  const onAdd = (contador) => {
+    return alert(`Agregaste ${contador} items al carrito`)
+  }
 
   return ( 
     <>
     
     <NavBar />
-    <ILC mensaje="Bienvenidos a mi tienda online!" />
+
+    <ItemListContainer mensaje={"Bienvenidos a mi tienda online!"} />
+    
+    <ItemCount stock={10} inicial={1} onAdd={onAdd} />
 
     </>
   )
