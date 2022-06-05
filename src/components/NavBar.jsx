@@ -1,13 +1,16 @@
-import CartWidget from './CartWidget.jsx'
-
-
+import CartWidget from "./CartWidget.jsx";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-light navbar-expand-lg bg-alpha-color-one">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <img src="/images/favicon.png" className="mi-estilo-logo" alt="floora logo" height="50px" width="50px"
+          <img
+            src="/images/favicon.png"
+            className="mi-estilo-logo"
+            alt="floora logo"
+            height="50px"
+            width="50px"
           />
         </a>
         <button
@@ -24,22 +27,34 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mi-estilo-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/"><CartWidget items={4} /></a>
+              <a className="nav-link" aria-current="page" href="/">
+                <CartWidget items={4} />
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">INICIO</a>
+              <a className="nav-link" aria-current="page" href="/">
+                INICIO
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">PRODUCTOS</a>
+              <a className="nav-link" href="/">
+                PRODUCTOS
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">PROMOCIONES</a>
+              <a className="nav-link" href="/">
+                PROMOCIONES
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">NOSOTROS</a>
+              <a className="nav-link" href="/">
+                NOSOTROS
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">CONTACTO</a>
+              <a className="nav-link" href="/">
+                CONTACTO
+              </a>
             </li>
           </ul>
         </div>
