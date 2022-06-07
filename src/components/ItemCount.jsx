@@ -29,6 +29,7 @@ export default function ItemCount({ stock, inicial, onAdd }) {
       onAdd(contador);
       setStockParcial(stockParcial - contador);
     }
+    setContador(inicial)
   };
 
   return (

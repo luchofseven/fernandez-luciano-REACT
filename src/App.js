@@ -1,5 +1,5 @@
 import  NavBar  from './components/NavBar.jsx'
-import ItemListContainer from './containers/ItemListContainer.jsx'
+import ItemListContainer from './components/ItemListContainer.jsx'
 import ItemCount from './components/ItemCount.jsx'
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
     
     <NavBar />
 
+    {/* <ItemCount stock={10} inicial={1} onAdd={onAdd} /> */}
+
     <ItemListContainer mensaje={"Bienvenidos a mi tienda online!"} />
-    
-    <ItemCount stock={10} inicial={1} onAdd={onAdd} />
 
     </>
   )

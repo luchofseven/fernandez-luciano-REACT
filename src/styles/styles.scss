@@ -74,3 +74,25 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
   align-items: center;
   align-content: center;
 }
+
+//Estilos para el componente ItemList
+.mi-estilo-itemlist {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 2rem;
+}
+
+//Estilos para la card del componente Item
+.mi-estilo-card {
+  text-align: center;
+  padding: 1rem;
+  border-color: $alpha-color-one;
+  border-radius: 1rem;
+  div {
+    background-color: $alpha-color-one;
+    border-radius: 1rem;
+  }
+}

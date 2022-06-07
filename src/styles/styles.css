@@ -61,3 +61,24 @@
   align-items: center;
   align-content: center;
 }
+
+.mi-estilo-itemlist {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.mi-estilo-card {
+  text-align: center;
+  padding: 1rem;
+  border-color: rgba(255, 153, 236, 0.3);
+  border-radius: 1rem;
+}
+
+.mi-estilo-card div {
+  background-color: rgba(255, 153, 236, 0.3);
+  border-radius: 1rem;
+}
