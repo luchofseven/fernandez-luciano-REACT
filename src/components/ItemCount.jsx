@@ -1,36 +1,36 @@
-import React, { useState } from "react";
+import { useState } from "react"
 
 export default function ItemCount({ stock, inicial, onAdd }) {
-  const [contador, setContador] = useState(inicial);
-  const [stockParcial, setStockParcial] = useState(stock);
+  const [contador, setContador] = useState(inicial)
+  const [stockParcial, setStockParcial] = useState(stock)
 
   const handlerQuitar = () => {
     if (contador > inicial) {
-      setContador(contador - 1);
+      setContador(contador - 1)
     } else {
-      alert("Compra minima");
+      alert("Compra minima")
     }
-  };
+  }
 
   const handlerAgregar = () => {
     if (contador < stock) {
-      setContador(contador + 1);
+      setContador(contador + 1)
     } else {
-      alert("Alcanzaste el stock de compra disponible");
+      alert("Alcanzaste el stock de compra disponible")
     }
-  };
+  }
 
   const hayStock = () => {
     if (contador > stockParcial) {
       alert(
         `No podes ingresar esta cantidad, stock disponible: ${stockParcial}`
-      );
+      )
     } else {
-      onAdd(contador);
-      setStockParcial(stockParcial - contador);
+      onAdd(contador)
+      setStockParcial(stockParcial - contador)
     }
     setContador(inicial)
-  };
+  }
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function ItemCount({ stock, inicial, onAdd }) {
             type="button"
             className="btn btn-dark"
             onClick={() => {
-              hayStock();
+              hayStock()
             }}
           >
             Agregar al carrito
@@ -67,5 +67,5 @@ export default function ItemCount({ stock, inicial, onAdd }) {
         </div>
       </div>
     </>
-  );
+  )
 }
