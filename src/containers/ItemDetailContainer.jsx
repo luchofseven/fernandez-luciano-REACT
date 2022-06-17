@@ -9,7 +9,8 @@ const ARRAY_PRODUCTOS = [
         name: "Brillo Labial",
         description: "Brillo labial ultra brillante de acabado húmedo. Hidrata sin ser pegajoso. Crea un efecto de volumen.",
         price: 395,
-        category: "labial"
+        category: "labial",
+        cantidad: 10
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const ARRAY_PRODUCTOS = [
         name: "Labial Líquido",
         description: "Labial líquido de color intenso y acabado satinado. Híbrido que cumple la función de labial y gloss a la vez.",
         price: 385,
-        category: "labial"
+        category: "labial",
+        cantidad: 10
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ const ARRAY_PRODUCTOS = [
         name: "Labial Holográfico",
         description: "Brillo labial holográfico ultra brillante con pigmentos móviles que se transfroman en color.",
         price: 390,
-        category: "labial"
+        category: "labial",
+        cantidad: 10
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const ARRAY_PRODUCTOS = [
         name: "Labial Aterciopelado",
         description: "Labial líquido de fórmula ligera y alta pigmentación. Hidratante, cremoso y de acabado aterciopelado.",
         price: 385,
-        category: "labial"
+        category: "labial",
+        cantidad: 10
     },
     {
         id: 5,
@@ -41,7 +45,8 @@ const ARRAY_PRODUCTOS = [
         name: "Delineador Fibra",
         description: "Delineador en fibra. Negro Intenso. Larga duración y resistente al agua.",
         price: 295,
-        category: "ojos"
+        category: "ojos",
+        cantidad: 10
     },
     {
         id: 6,
@@ -49,7 +54,8 @@ const ARRAY_PRODUCTOS = [
         name: "Máscara de Pestañas",
         description: "Máscara de pestañas waterproof. Negro intenso. Crea volumen y alarga las pestañas.",
         price: 395,
-        category: "ojos"
+        category: "ojos",
+        cantidad: 10
     },
     {
         id: 7,
@@ -57,7 +63,8 @@ const ARRAY_PRODUCTOS = [
         name: "Lápiz Delineador",
         description: "Delineador en lápiz negro intenso. Textura supercremosa que se aplica sin esfuerzo. Larga duración.",
         price: 150,
-        category: "ojos"
+        category: "ojos",
+        cantidad: 10
     },
     {
         id: 8,
@@ -65,7 +72,8 @@ const ARRAY_PRODUCTOS = [
         name: "Paleta Pastel",
         description: "Paleta con gama de todos mates, superiridiscentes y metalizados que permiten lograr diferentes looks.",
         price: 685,
-        category: "ojos"
+        category: "ojos",
+        cantidad: 10
     },
     {
         id: 9,
@@ -73,7 +81,8 @@ const ARRAY_PRODUCTOS = [
         name: "Polvo Volátil",
         description: "Polvo suelto ultraligero que fija y prolonga la duración del maquillaje.",
         price: 450,
-        category: "rostro"
+        category: "rostro",
+        cantidad: 10
     },
     {
         id: 10,
@@ -81,7 +90,8 @@ const ARRAY_PRODUCTOS = [
         name: "Base Líquida",
         description: "Base fluída de alta cobertura. No reseca la piel. Larga duración.",
         price: 480,
-        category: "rostro"
+        category: "rostro",
+        cantidad: 10
     },
     {
         id: 11,
@@ -89,7 +99,8 @@ const ARRAY_PRODUCTOS = [
         name: "Paleta de Bronzers",
         description: "Paleta de bronceadores mates y brillantes para dar profunidad y dimensión.",
         price: 500,
-        category: "rostro"
+        category: "rostro",
+        cantidad: 10
     },
     {
         id: 12,
@@ -97,7 +108,8 @@ const ARRAY_PRODUCTOS = [
         name: "Paleta de Iluminadores",
         description: "Paleta de cuatro iluminadores, para conseguir desde un brillo natural hasta un mega glow.",
         price: 500,
-        category: "rostro"
+        category: "rostro",
+        cantidad: 10
     },
     {
         id: 13,
@@ -105,7 +117,8 @@ const ARRAY_PRODUCTOS = [
         name: "Esmaltes",
         description: "Esmalte para uñas. 24 Tonos.",
         price: 200,
-        category: "esmalte"
+        category: "esmalte",
+        cantidad: 10
     },
     {
         id: 14,
@@ -113,7 +126,8 @@ const ARRAY_PRODUCTOS = [
         name: "Esmalte Matificante",
         description: "Protege el esmalte y proporciona a la uña un acabado efecto mate sobre cualquier esmalte común.",
         price: 300,
-        category: "esmalte"
+        category: "esmalte",
+        cantidad: 10
     }
 ]
 

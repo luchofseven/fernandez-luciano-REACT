@@ -134,6 +134,8 @@ export default function ItemListContainer({ mensaje }) {
       setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "rostro"))
     } else if (id === "esmalte") {
       setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "esmalte"))
+    } else {
+      setProductos(ARRAY_PRODUCTOS)
     }
 
   }, [id])

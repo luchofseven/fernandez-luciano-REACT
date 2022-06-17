@@ -5,10 +5,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export default function App() {
 
-  const onAdd = (contador) => {
-    return alert(`Agregaste ${contador} items al carrito`)
-  }
-
   return ( 
     
     <BrowserRouter>
