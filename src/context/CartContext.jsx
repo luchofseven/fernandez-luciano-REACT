@@ -14,10 +14,7 @@ export default function MyProvider({ children }) {
 
 
     const addItem = (item, quantity) => {
-        const newItem = {
-            ...item,
-            quantity
-        }
+        const newItem = { ...item, quantity }
 
         if (isInCart(newItem.id)) {
             const findProduct = cart.find(item => item.id === newItem.id)
@@ -26,7 +23,7 @@ export default function MyProvider({ children }) {
             auxArray[productIndex].quantity += quantity
             setCart(auxArray)
         } else {
-            setCart([...cart], newItem)
+            setCart([...cart, newItem])
         }
     }
 
