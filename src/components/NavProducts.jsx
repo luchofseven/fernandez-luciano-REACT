@@ -4,16 +4,16 @@ export default function NavProducts() {
     return (
         <ul className="navbar-nav mi-estilo-navProducts">
             <li className="nav-item">
-                <Link className="nav-link" to="/category/labial">Labiales</Link>
+                <Link className="nav-link" to="/category/labial">LABIALES</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/category/ojos">Ojos</Link>
+                <Link className="nav-link" to="/category/ojos">OJOS</Link>
             </li>
             <li className="nav-item mi-estilo-link">
-                <Link className="nav-link" to="/category/rostro">Rostro</Link>
+                <Link className="nav-link" to="/category/rostro">ROSTRO</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/category/esmalte">Esmaltes</Link>
+                <Link className="nav-link" to="/category/esmalte">ESMALTES</Link>
             </li>
         </ul>
     )

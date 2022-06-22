@@ -1,11 +1,11 @@
 import Item from "./Item"
 
-export default function ItemList({ arrayProductos }) {
+export default function ItemList({ arrayProducts }) {
 
   return (
 
     <div className="mi-estilo-itemlist">
-      {arrayProductos?.map(producto => <Item key={producto.id} item={producto} />)}
+      {arrayProducts?.map(product => <Item key={product.id} item={product} />)}
     </div>
 
   )

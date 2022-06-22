@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import ItemList from "../components/ItemList"
 import NavProducts from "../components/NavProducts"
 
-const ARRAY_PRODUCTOS = [
+const ARRAY_PRODUCTS = [
   {
     id: 1,
     img: "../images/labial-gloss.jpg",
@@ -118,24 +118,24 @@ const ARRAY_PRODUCTOS = [
   }
 ]
 
-export default function ItemListContainer({ mensaje }) {
+export default function ItemListContainer({ greeting }) {
 
   const { id } = useParams()
+  const [products, setProducts] = useState([])
 
-  const [productos, setProductos] = useState(ARRAY_PRODUCTOS)
 
   useEffect(() => {
 
     if (id === "labial") {
-      setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "labial"))
+      setProducts(ARRAY_PRODUCTS.filter(producto => producto.category === "labial"))
     } else if (id === "ojos") {
-      setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "ojos"))
+      setProducts(ARRAY_PRODUCTS.filter(producto => producto.category === "ojos"))
     } else if (id === "rostro") {
-      setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "rostro"))
+      setProducts(ARRAY_PRODUCTS.filter(producto => producto.category === "rostro"))
     } else if (id === "esmalte") {
-      setProductos(ARRAY_PRODUCTOS.filter(producto => producto.category === "esmalte"))
+      setProducts(ARRAY_PRODUCTS.filter(producto => producto.category === "esmalte"))
     } else {
-      setProductos(ARRAY_PRODUCTOS)
+      setProducts(ARRAY_PRODUCTS)
     }
 
   }, [id])
@@ -143,8 +143,8 @@ export default function ItemListContainer({ mensaje }) {
   return (<>
     <NavProducts />
     <div className="container-fluid">
-      <h2 className="text-center">{mensaje}</h2>
-      <ItemList arrayProductos={productos} />
+      <h2 className="text-center">{greeting}</h2>
+      <ItemList arrayProducts={products} />
     </div>
   </>)
 }

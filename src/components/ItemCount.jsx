@@ -1,73 +1,51 @@
 import { useState } from "react"
 
-export default function ItemCount({ stock, inicial, onAdd }) {
-  const [contador, setContador] = useState(inicial)
-  const [stockParcial, setStockParcial] = useState(stock)
-  const [stockDisponible, setStockDisponible] = useState(9) //Hardcodee el 9 porque si pongo stock no me lo toma, no sé por qué (ayuda xD)!
+export default function ItemCount({ stock, initial, onAdd }) {
+
+  const [count, setCount] = useState(initial)
+  const [partialStock, setPartialStock] = useState(stock)
 
   const handlerQuitar = () => {
-    if (contador > inicial) {
-      setContador(contador - 1)
-      setStockDisponible(stockDisponible + 1)
+    if (count > initial) {
+      setCount(count - 1)
     } else {
       alert("Compra minima")
     }
   }
 
   const handlerAgregar = () => {
-    if (contador < stock) {
-      setContador(contador + 1)
-      setStockDisponible(stockDisponible - 1)
+    if (count < stock) {
+      setCount(count + 1)
     } else {
       alert("Alcanzaste el stock de compra disponible")
     }
   }
 
-  const hayStock = () => {
-    if (contador > stockParcial) {
+  const isValue = () => {
+    if (count > partialStock) {
       alert(
-        `No podes ingresar esta cantidad, stock disponible: ${stockParcial}`
+        `No podes ingresar esta cantidad, stock disponible: ${partialStock}`
       )
     } else {
-      onAdd(contador)
-      setStockParcial(stockParcial - contador)
+      onAdd(count)
+      setPartialStock(partialStock - count)
     }
-    setContador(inicial)
+    setCount(initial)
   }
 
   return (
     <>
       <div className="mi-estilo-itemcount">
         <h5 className="text-center">Cantidad:</h5>
-        <h3>{contador}</h3>
-        <small>Disponible: {stockDisponible} unidades</small>
+        <h3>{count}</h3>
+        <small>Disponible: {stock} unidades</small>
 
         <div className="btn-group" role="group">
-          <button
-            type="button"
-            className="btn mi-estilo-btn"
-            onClick={() => handlerQuitar()}
-          >
-            -
-          </button>
+          <button type="button" className="btn mi-estilo-btn" onClick={() => handlerQuitar()}>-</button>
 
-          <button
-            type="button"
-            className="btn btn-dark"
-            onClick={() => {
-              hayStock()
-            }}
-          >
-            Agregar al carrito
-          </button>
+          <button type="button" className="btn btn-dark" onClick={() => { isValue() }}>Agregar al carrito</button>
 
-          <button
-            type="button"
-            className="btn mi-estilo-btn"
-            onClick={() => handlerAgregar()}
-          >
-            +
-          </button>
+          <button type="button" className="btn mi-estilo-btn" onClick={() => handlerAgregar()}>+</button>
         </div>
       </div>
     </>
