@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../components/ItemDetail'
 
-const ARRAY_PRODUCTOS = [
+const ARRAY_PRODUCTS = [
     {
         id: 1,
         img: "../images/labial-gloss.jpg",
@@ -138,7 +138,7 @@ export default function ItemDetailContainer() {
 
     useEffect(() => {
 
-        ARRAY_PRODUCTOS.find(producto => producto.id == id && setItemDetail(producto))
+        ARRAY_PRODUCTS.find(product => product.id == id && setItemDetail(product))
 
     }, [id])
 
