@@ -6,7 +6,7 @@ export default function Footer() {
             <h3>Visitanos en nuestro Instagram!</h3>
             <div>
                 <img src="images/favicon.png" alt="floora logo" width="90px" />
-                <a href="https://www.instagram.com/floora.accesorios/" target="_blank"><h2>FLOORA.ACCESORIOS</h2></a>
+                <a href="https://www.instagram.com/floora.accesorios/" target="_blank"><h2>floora.accesorios</h2></a>
             </div>
         </div>
     )

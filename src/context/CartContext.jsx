@@ -40,7 +40,7 @@ export default function MyProvider({ children }) {
     }
 
     const getItemPrice = () => {
-        return cart.reduce((acc, e) => acc += e.quantity * e.price)
+        return cart.reduce((acc, e) => acc += e.quantity * e.price, 0)
     }
 
 

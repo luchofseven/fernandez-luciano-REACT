@@ -40,10 +40,10 @@ export default function ItemCount({ stock, initial, onAdd }) {
         <h3>{count}</h3>
         <small>Disponible: {stock} unidades</small>
 
-        <div className="btn-group" role="group">
+        <div className="btn-group m-2" role="group">
           <button type="button" className="btn mi-estilo-btn" onClick={() => handlerQuitar()}>-</button>
 
-          <button type="button" className="btn btn-dark" onClick={() => { isValue() }}>Agregar al carrito</button>
+          <button type="button" className="btn mi-estilo-btn2" onClick={() => { isValue() }}>Agregar al carrito</button>
 
           <button type="button" className="btn mi-estilo-btn" onClick={() => handlerAgregar()}>+</button>
         </div>
