@@ -28,7 +28,7 @@ export default function ItemDetail({ item }) {
                     : <>
                         <Link to="/cart"><button type="button" className="btn mi-estilo-btn">Ver el carrito</button></Link>
                         <Link to="/"><button type="button" className="btn mi-estilo-btn">Seguir comprando</button></Link>
-                        <Link to="/pago"><button type="button" className="btn mi-estilo-btn">Terminar compra</button></Link>
+                        <Link to="/payment"><button type="button" className="btn mi-estilo-btn">Terminar compra</button></Link>
                     </>
             }
         </div>
