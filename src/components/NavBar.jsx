@@ -1,7 +1,7 @@
-import CartWidget from "./CartWidget.jsx"
 import { Link } from "react-router-dom"
 import { CartContext } from "../context/CartContext.jsx"
 import { useContext } from "react"
+import CartWidget from "./CartWidget.jsx"
 
 export default function NavBar() {
 
@@ -24,13 +24,10 @@ export default function NavBar() {
               }
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">HOME</Link>
+              <Link className="nav-link" to="/">INICIO</Link>
             </li>
             <li className="nav-item mi-estilo-link">
-              <Link className="nav-link" to="/aboutus">ABOUT US</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">CONTACT</Link>
+              <Link className="nav-link" to="/aboutus">NOSOTROS</Link>
             </li>
           </ul>
         </div>

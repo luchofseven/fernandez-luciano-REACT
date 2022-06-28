@@ -370,3 +370,28 @@
   padding: .5rem;
   width: 25rem;
 }
+
+.mi-estilo-aboutUs {
+  background-color: rgba(255, 153, 236, 0.3);
+  border: 2px dashed #000000;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 35rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.2px;
+}
+
+.mi-estilo-aboutUs h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.mi-estilo-aboutUs p {
+  line-height: 2.3rem;
+}
