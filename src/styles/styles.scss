@@ -45,8 +45,8 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
     margin: 0rem .65rem;
 
     a {
-      font-weight: 500;
-      font-size: 1.1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
       transition: 200ms ease-out;
     }
 
@@ -233,6 +233,7 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
 .mi-estilo-btn2 {
   background-color: $alpha-color-one;
   border: .5px solid $main-color-one;
+  border-radius: .5rem;
 }
 
 .mi-estilo-btn2:hover {
@@ -345,6 +346,35 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
 
     100% {
       transform: rotate(360deg);
+    }
+  }
+}
+
+//Estilos para el componente CheckOut
+.mi-estilo-checkOut {
+  border: 2px dashed $main-color-one;
+  max-width: 65rem;
+  height: 30rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label {
+      font-weight: bold;
+      color: $main-color-one;
+      text-decoration: underline;
+    }
+    input {
+      border: 1px solid $main-color-one;
+      border-radius: .5rem;
+      margin: 1rem;
+      padding: .5rem;
+      width: 25rem;
     }
   }
 }

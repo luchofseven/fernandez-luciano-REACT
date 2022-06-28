@@ -28,12 +28,9 @@ export default function ItemDetail({ item }) {
                     : <>
                         <Link to="/cart"><button type="button" className="btn mi-estilo-btn">Ver el carrito</button></Link>
                         <Link to="/"><button type="button" className="btn mi-estilo-btn">Seguir comprando</button></Link>
-                        <Link to="/payment"><button type="button" className="btn mi-estilo-btn">Terminar compra</button></Link>
+                        <Link to="/checkout"><button type="button" className="btn mi-estilo-btn">Terminar compra</button></Link>
                     </>
             }
         </div>
     )
 }
-
-{/* <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
-<Link to="/cart"><button type="button" className="btn mi-estilo-btn">Ver el carrito</button></Link> */}

@@ -20,6 +20,7 @@ export default function Cart() {
                         </div>
                         <div className="mi-estilo-cart">
                             <button className="btn mi-estilo-btn" onClick={() => clear()}>Vaciar carrito</button>
+                            <Link to="/checkout"><button className="btn mi-estilo-btn">Terminar compra</button></Link>
                         </div>
                     </>
                     :
@@ -33,14 +34,3 @@ export default function Cart() {
         </>
     )
 }
-
-
-// { cart.map(product => <ItemCart key={product.id} product={product} />) }
-//             <div className="mi-estilo-cart-h4">
-//                 <h4>Productos agregados: {getItemQty()}</h4>
-//                 <h4>Total a pagar: ${getItemPrice()}</h4>
-//             </div>
-//             <div className="mi-estilo-cart">
-//                 <button className="btn mi-estilo-btn" onClick={() => clear()}>Vaciar carrito</button>
-//             </div>
-

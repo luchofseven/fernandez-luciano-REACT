@@ -5,6 +5,7 @@ import ItemDetailContainer from './containers/ItemDetailContainer.jsx'
 import NavBar  from './components/NavBar.jsx'
 import Footer from './components/Footer.jsx'
 import Cart from './components/Cart.jsx'
+import CheckOut from './components/CheckOut.jsx'
 import { initializeApp } from "firebase/app";
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/category/:id" element={<ItemListContainer />} />
             <Route path="/producto/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart/>} />
+            <Route path="/checkout" element={<CheckOut />} />
           </Routes>
       <Footer />
     </MyProvider>

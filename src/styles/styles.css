@@ -35,8 +35,8 @@
 }
 
 .mi-estilo-nav li a {
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   transition: 200ms ease-out;
 }
 
@@ -223,6 +223,7 @@
 .mi-estilo-btn2 {
   background-color: rgba(255, 153, 236, 0.3);
   border: 0.5px solid #ff99ec;
+  border-radius: .5rem;
 }
 
 .mi-estilo-btn2:hover {
@@ -337,4 +338,35 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.mi-estilo-checkOut {
+  border: 2px dashed #ff99ec;
+  max-width: 65rem;
+  height: 30rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mi-estilo-checkOut div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mi-estilo-checkOut div label {
+  font-weight: bold;
+  color: #ff99ec;
+  text-decoration: underline;
+}
+
+.mi-estilo-checkOut div input {
+  border: 1px solid #ff99ec;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  width: 25rem;
 }
