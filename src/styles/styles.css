@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .bg-color-one {
@@ -31,7 +31,7 @@
 }
 
 .mi-estilo-nav li {
-  margin: 0rem .65rem;
+  margin: 0rem 0.65rem;
 }
 
 .mi-estilo-nav li a {
@@ -61,7 +61,7 @@
   width: 100%;
   height: 4rem;
   border: 2px solid rgba(255, 153, 236, 0.3);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .mi-estilo-navProducts a {
@@ -112,7 +112,7 @@
 }
 
 .mi-estilo-footer div h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   letter-spacing: -0.1rem;
   text-align: center;
@@ -147,22 +147,22 @@
 
 .mi-estilo-card {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border-color: rgba(255, 153, 236, 0.3);
   border-radius: 1rem;
 }
 
 .mi-estilo-card div {
   background-color: rgba(255, 153, 236, 0.3);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .mi-estilo-card h5 {
   color: #000000;
   font-weight: bold;
   background-color: #ff99ec;
-  padding: .5rem;
-  border-radius: .5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .mi-estilo-card h4 {
@@ -182,7 +182,7 @@
 
 .mi-estilo-itemdetail img {
   border: 2px solid #ff99ec;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
 }
 
@@ -209,7 +209,7 @@
   color: #000000;
   background-color: #ffffff;
   border: 1.5px solid #ff99ec;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .mi-estilo-btn:hover {
@@ -223,7 +223,7 @@
 .mi-estilo-btn2 {
   background-color: rgba(255, 153, 236, 0.3);
   border: 0.5px solid #ff99ec;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .mi-estilo-btn2:hover {
@@ -365,9 +365,9 @@
 
 .mi-estilo-checkOut div input {
   border: 1px solid #ff99ec;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 25rem;
 }
 
@@ -386,7 +386,7 @@
 }
 
 .mi-estilo-aboutUs h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -394,4 +394,110 @@
 
 .mi-estilo-aboutUs p {
   line-height: 2.3rem;
+}
+
+@media screen and (max-width: 415px) {
+  .mi-estilo-nav a {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .mi-estilo-logo {
+    transition: none;
+  }
+  .mi-estilo-logo:hover {
+    transform: none;
+  }
+  .mi-estilo-navProducts {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    margin: 1rem auto;
+    border: none;
+  }
+  .mi-estilo-navProducts a {
+    font-weight: 500;
+  }
+  .mi-estilo-footer div {
+    opacity: 1;
+  }
+  .mi-estilo-itemlist {
+    border-top: 10px solid rgba(255, 153, 236, 0.3);
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .mi-estilo-itemdetail {
+    padding: 1rem;
+    margin: 3rem 1rem;
+    border: 3px dashed #ff99ec;
+  }
+  .mi-estilo-itemdetail h4 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .mi-estilo-itemdetail p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .mi-estilo-cart {
+    min-height: 65vh;
+  }
+  .mi-estilo-cart-h4 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  .mi-estilo-emptyCart {
+    min-height: 60vh;
+  }
+  .mi-estilo-itemCart {
+    display: flex;
+    width: 85%;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    flex-direction: column;
+    border: 2px solid #ff99ec;
+    border-top: 20px solid #ff99ec;
+    border-radius: 1rem;
+  }
+  .mi-estilo-itemCart h5 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  .mi-estilo-itemCart button {
+    margin-top: 2rem;
+  }
+  .mi-estilo-checkOut {
+    max-width: 22rem;
+    display: flex;
+  }
+  .mi-estilo-checkOut div input {
+    border: 1px solid #ff99ec;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 19rem;
+  }
+  .mi-estilo-aboutUs {
+    margin: 3rem 1rem;
+    max-width: 25rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+  }
+  .mi-estilo-aboutUs h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .mi-estilo-aboutUs p {
+    line-height: 2rem;
+    text-align: center;
+  }
 }
