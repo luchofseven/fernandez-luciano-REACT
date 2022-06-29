@@ -208,12 +208,12 @@
 .mi-estilo-btn {
   color: #000000;
   background-color: #ffffff;
-  border: 1.5px solid #ff99ec;
+  border: 1px solid #ff99ec;
   border-radius: 0.5rem;
 }
 
 .mi-estilo-btn:hover {
-  background-color: #efefefef;
+  background-color: #ff99ec;
 }
 
 .mi-estilo-btn:focus {
@@ -222,12 +222,32 @@
 
 .mi-estilo-btn2 {
   background-color: rgba(255, 153, 236, 0.3);
-  border: 0.5px solid #ff99ec;
+  border: 1px solid #ff99ec;
   border-radius: 0.5rem;
 }
 
 .mi-estilo-btn2:hover {
   background-color: #ff99ec;
+}
+
+.mi-estilo-btn2:focus {
+  box-shadow: none;
+}
+
+.mi-estilo-btn-sweetAlert {
+  color: #000000;
+  background-color: rgba(255, 153, 236, 0.3);
+  border: 0.5px solid #ff99ec;
+  border-radius: 0.5rem;
+}
+
+.mi-estilo-btn-sweetAlert:focus {
+  box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #ff99ec;
+  color: #000000;
 }
 
 .mi-estilo-cart {

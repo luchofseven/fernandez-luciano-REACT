@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { CartContext } from "../context/CartContext"
 import ItemCount from "./ItemCount"
+import swal from "sweetalert"
 
 export default function ItemDetail({ item }) {
 
@@ -12,7 +13,14 @@ export default function ItemDetail({ item }) {
     const onAdd = (count) => {
         isInCart(item.id)
         addItem(item, count)
-        alert(`Agregaste ${count} items al carrito`)
+        swal({
+            text: `Agregaste ${count} producto/s al carrito`,
+            buttons: {
+                confirm: {
+                    className: "mi-estilo-btn-sweetAlert"
+                }
+            }
+        })
         setButtonCart(false)
     }
 

@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../context/CartContext"
 import { addDoc, collection, getFirestore } from "firebase/firestore"
+import swal from "sweetalert"
 
 export default function CheckOut() {
 
@@ -29,7 +30,15 @@ export default function CheckOut() {
         }
 
         if (order.products.length === 0) {
-            alert("No se pudo completar la operacion porque el carrito está vacío")
+            swal({
+                title: "No se pudo completar la operacion porque el carrito está vacío",
+                icon: "error",
+                buttons: {
+                    confirm: {
+                        className: "mi-estilo-btn-sweetAlert"
+                    }
+                }
+            })
             setName("")
             setEmail("")
             setPhoneNumber("")
@@ -37,8 +46,16 @@ export default function CheckOut() {
             addDoc(orderCollection, order)
                 .then(({ id }) => {
                     if (id) {
-                        console.log(id)
-                        alert("¡Gracias por su compra!")
+                        swal({
+                            title: "¡Gracias por su compra!",
+                            text: `ID de compra: ${id}`,
+                            icon: "success",
+                            buttons: {
+                                confirm: {
+                                    className: "mi-estilo-btn-sweetAlert"
+                                }
+                            }
+                        })
                     }
                 })
                 .catch((error) => {

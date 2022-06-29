@@ -217,12 +217,12 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
 .mi-estilo-btn {
   color: #000000;
   background-color: #ffffff;
-  border: 1.5px solid $main-color-one;
+  border: 1px solid $main-color-one;
   border-radius: 0.5rem;
 }
 
 .mi-estilo-btn:hover {
-  background-color: #efefefef;
+  background-color: $main-color-one;
 }
 
 .mi-estilo-btn:focus {
@@ -231,12 +231,33 @@ $alpha-color-two: rgba(198, 255, 0, 0.3);
 
 .mi-estilo-btn2 {
   background-color: $alpha-color-one;
-  border: 0.5px solid $main-color-one;
+  border: 1px solid $main-color-one;
   border-radius: 0.5rem;
 }
 
 .mi-estilo-btn2:hover {
   background-color: $main-color-one;
+}
+
+.mi-estilo-btn2:focus {
+  box-shadow: none;
+}
+
+//Botones SweetAlert
+.mi-estilo-btn-sweetAlert {
+  color: #000000;
+  background-color: $alpha-color-one;
+  border: 0.5px solid $main-color-one;
+  border-radius: 0.5rem;
+}
+
+.mi-estilo-btn-sweetAlert:focus{
+  box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: $main-color-one;
+  color: #000000;
 }
 
 //Estilos para el componente Cart
