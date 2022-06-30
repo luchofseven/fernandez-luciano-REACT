@@ -1,5 +1,5 @@
-
 export default function Footer() {
+
     return (
         <div className="mi-estilo-footer">
             <h3>Visitanos en nuestro Instagram!</h3>

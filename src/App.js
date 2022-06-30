@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { initializeApp } from "firebase/app";
 import MyProvider from './context/CartContext.jsx'
 import ItemListContainer from './containers/ItemListContainer.jsx'
 import ItemDetailContainer from './containers/ItemDetailContainer.jsx'
@@ -6,7 +7,6 @@ import NavBar  from './components/NavBar.jsx'
 import Footer from './components/Footer.jsx'
 import Cart from './components/Cart.jsx'
 import CheckOut from './components/CheckOut.jsx'
-import { initializeApp } from "firebase/app";
 import AboutUs from './components/AboutUs.jsx'
 
 export default function App() {

@@ -14,7 +14,7 @@ export default function ItemDetail({ item }) {
         isInCart(item.id)
         addItem(item, count)
         swal({
-            text: `Agregaste ${count} producto/s al carrito`,
+            text: `Agregaste ${count} ${item.name} al carrito`,
             buttons: {
                 confirm: {
                     className: "mi-estilo-btn-sweetAlert"

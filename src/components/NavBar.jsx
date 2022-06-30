@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom"
-import { CartContext } from "../context/CartContext.jsx"
-import { useContext } from "react"
 import CartWidget from "./CartWidget.jsx"
 
 export default function NavBar() {
-
-  const { cart } = useContext(CartContext)
 
   return (
     <nav className="navbar navbar-light navbar-expand-lg bg-alpha-color-one">
@@ -19,9 +15,7 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mi-estilo-nav">
             <li className="nav-item">
-              {
-                (cart.length > 0) && <Link className="nav-link" to="/cart"><CartWidget /></Link>
-              }
+              <Link className="nav-link" to="/cart"><CartWidget /></Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">INICIO</Link>

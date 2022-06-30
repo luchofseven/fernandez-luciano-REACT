@@ -1,5 +1,5 @@
-
 export default function AboutUs() {
+
     return (
         <div className="mi-estilo-aboutUs">
             <h2>NOSOTROS</h2>
